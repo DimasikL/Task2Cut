@@ -42,7 +42,7 @@ public class cut {
                 reader = new BufferedReader(new FileReader(inputName));
             } catch (FileNotFoundException e) {
                 System.err.println("File not found: " + inputName);
-                return;
+                throw new FileNotFoundException();
             }
         } else {
             reader = new BufferedReader(new InputStreamReader(System.in));
@@ -68,7 +68,7 @@ public class cut {
             end = Math.min(end, length);
             String result = null;
             if (byChar) {
-                line.substring(start, end);
+                result = line.substring(start, end);
             } else {
                 String[] words = line.split("\\s+");
                 StringBuilder str = new StringBuilder();
@@ -77,9 +77,7 @@ public class cut {
                 }
                 result = str.toString().trim();
             }
-            if (result != null) {
-                writer.write(result);
-            }
+            writer.write(result);
             writer.newLine();
         }
         reader.close();
