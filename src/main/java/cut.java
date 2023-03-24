@@ -55,7 +55,7 @@ public class cut {
                 writer = new BufferedWriter(new FileWriter(outputName));
             } catch (IOException e) {
                 System.err.println("File can`t write: " + outputName);
-                return;
+                throw new IOException();
             }
         } else {
             writer = new BufferedWriter(new OutputStreamWriter(System.out));
