@@ -5,13 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f81b04fb-e8de-4d24-9d5c-adedbd49b5c0" name="Changes" comment="task2 without problems">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Cut.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/CutOptions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cut.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/input/output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cut.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CutTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -51,14 +59,19 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="autoscrollToSource" value="true" />
+  </component>
   <component name="ProjectId" id="2NMLg2EXlrR2hnAwJpiFst4nQvw" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="RunManager" selected="Gradle.cutTest">
-    <configuration name="cutTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="PropertiesComponent">{
+}</component>
+  <component name="RunManager" selected="Gradle.CutTest">
+    <configuration name="CutTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -71,7 +84,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;cutTest&quot;" />
+            <option value="&quot;CutTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -81,7 +94,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="cutTest.testCutByChar" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CutTest.finTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -94,7 +107,76 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;cutTest.testCutByChar&quot;" />
+            <option value="&quot;CutTest.finTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="CutTest.testProcessLineInvalidRangeFormat" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;CutTest.testProcessLineInvalidRangeFormat&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="CutTest.testRunInvalidOptions" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;CutTest.testRunInvalidOptions&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="CutTest.testRunWithFiles" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;CutTest.testRunWithFiles&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -106,8 +188,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.cutTest" />
-        <item itemvalue="Gradle.cutTest.testCutByChar" />
+        <item itemvalue="Gradle.CutTest" />
+        <item itemvalue="Gradle.CutTest.finTest" />
+        <item itemvalue="Gradle.CutTest.testProcessLineInvalidRangeFormat" />
+        <item itemvalue="Gradle.CutTest.testRunWithFiles" />
+        <item itemvalue="Gradle.CutTest.testRunInvalidOptions" />
       </list>
     </recent_temporary>
   </component>
@@ -134,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679644807104</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="task2 without problems">
+      <created>1679649056391</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1679649056391</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -157,8 +249,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/cut.java</url>
-          <line>4</line>
+          <url>file://$PROJECT_DIR$/build.gradle</url>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
