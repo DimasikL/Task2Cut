@@ -6,25 +6,28 @@ import org.kohsuke.args4j.Option;
 public class CutOptions {
 
     @Option(name = "-c", usage = "cut by characters")
-    boolean byChar;
+    private boolean byChar;
 
     @Option(name = "-w", usage = "cut by words")
-    boolean byWord;
+    private boolean byWord;
 
     @Option(name = "-o", usage = "output file")
-    String outputName;
+    private String outputName;
 
     @Argument(metaVar = "file and range")
-    String inputName;
+    private String inputName;
 
     @Argument(index = 1, metaVar = "range")
-    String range;
+    private String range;
+
+    public CutOptions() {
+    }
 
     public static void main(String[] args) {
         new CutOptions().parse(args);
     }
 
-    public void parse(String[] args) {
+    protected void parse(String[] args) {
         CmdLineParser parser = new CmdLineParser(this);
         try {
             parser.parseArgument(args);
@@ -35,9 +38,23 @@ public class CutOptions {
 
     }
 
-    public void run(boolean byChar, boolean byWord, String inputName, String outputName, String range) {
-        Cut.runs(byChar, byWord, inputName, outputName, range);
+    public boolean isByChar() {
+        return byChar;
     }
 
+    public boolean isByWord() {
+        return byWord;
+    }
 
+    public String getOutputName() {
+        return outputName;
+    }
+
+    public String getInputName() {
+        return inputName;
+    }
+
+    public String getRange() {
+        return range;
+    }
 }

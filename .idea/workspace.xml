@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f81b04fb-e8de-4d24-9d5c-adedbd49b5c0" name="Changes" comment="task2 without problems">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Cut.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/CutOptions.java" afterDir="false" />
+    <list default="true" id="f81b04fb-e8de-4d24-9d5c-adedbd49b5c0" name="Changes" comment="task2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/input/output.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cut.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CutTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Cut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cut.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CutOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CutOptions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CutTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +67,7 @@
   </component>
   <component name="PropertiesComponent">{
 }</component>
-  <component name="RunManager" selected="Gradle.CutTest">
+  <component name="RunManager" selected="Gradle.CutTest.testRunWithFiles">
     <configuration name="CutTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -117,6 +114,29 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="CutTest.testParse" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;CutTest.testParse&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="CutTest.testProcessLineInvalidRangeFormat" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -131,29 +151,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;CutTest.testProcessLineInvalidRangeFormat&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="CutTest.testRunInvalidOptions" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;CutTest.testRunInvalidOptions&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -188,11 +185,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.CutTest" />
-        <item itemvalue="Gradle.CutTest.finTest" />
-        <item itemvalue="Gradle.CutTest.testProcessLineInvalidRangeFormat" />
         <item itemvalue="Gradle.CutTest.testRunWithFiles" />
-        <item itemvalue="Gradle.CutTest.testRunInvalidOptions" />
+        <item itemvalue="Gradle.CutTest" />
+        <item itemvalue="Gradle.CutTest.testProcessLineInvalidRangeFormat" />
+        <item itemvalue="Gradle.CutTest.testParse" />
+        <item itemvalue="Gradle.CutTest.finTest" />
       </list>
     </recent_temporary>
   </component>
@@ -226,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679649056391</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="task2">
+      <created>1680697956492</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1680697956494</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -243,7 +247,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="task2 with problems" />
     <MESSAGE value="task2 without problems" />
-    <option name="LAST_COMMIT_MESSAGE" value="task2 without problems" />
+    <MESSAGE value="task2" />
+    <option name="LAST_COMMIT_MESSAGE" value="task2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
