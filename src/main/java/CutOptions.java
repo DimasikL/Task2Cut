@@ -27,7 +27,7 @@ public class CutOptions {
         new CutOptions().parse(args);
     }
 
-    protected void parse(String[] args) {
+    public void parse(String[] args) {
         CmdLineParser parser = new CmdLineParser(this);
         try {
             parser.parseArgument(args);

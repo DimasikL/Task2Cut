@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f81b04fb-e8de-4d24-9d5c-adedbd49b5c0" name="Changes" comment="task2">
+    <list default="true" id="f81b04fb-e8de-4d24-9d5c-adedbd49b5c0" name="Changes" comment="task2)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Cut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cut.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/CutOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CutOptions.java" afterDir="false" />
@@ -67,7 +67,7 @@
   </component>
   <component name="PropertiesComponent">{
 }</component>
-  <component name="RunManager" selected="Gradle.CutTest.testRunWithFiles">
+  <component name="RunManager" selected="Gradle.CutTest">
     <configuration name="CutTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -185,11 +185,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.CutTest.testRunWithFiles" />
         <item itemvalue="Gradle.CutTest" />
+        <item itemvalue="Gradle.CutTest.finTest" />
+        <item itemvalue="Gradle.CutTest.testRunWithFiles" />
         <item itemvalue="Gradle.CutTest.testProcessLineInvalidRangeFormat" />
         <item itemvalue="Gradle.CutTest.testParse" />
-        <item itemvalue="Gradle.CutTest.finTest" />
       </list>
     </recent_temporary>
   </component>
@@ -230,7 +230,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680697956494</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="task2)">
+      <created>1681486747406</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1681486747406</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -248,7 +255,8 @@
     <MESSAGE value="task2 with problems" />
     <MESSAGE value="task2 without problems" />
     <MESSAGE value="task2" />
-    <option name="LAST_COMMIT_MESSAGE" value="task2" />
+    <MESSAGE value="task2)" />
+    <option name="LAST_COMMIT_MESSAGE" value="task2)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

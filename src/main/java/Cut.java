@@ -1,7 +1,7 @@
 import java.io.*;
 
 public class Cut {
-    public static void runs(boolean byChar, boolean byWord, String inputName, String outputName, String range) throws IOException {
+    public void runs(boolean byChar, boolean byWord, String inputName, String outputName, String range) throws IOException {
         if (byChar == byWord) {
             System.err.println("Either -c or -w must be specified, but not both");
             return;

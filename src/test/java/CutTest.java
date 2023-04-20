@@ -10,7 +10,8 @@ public class CutTest {
         CutOptions options = new CutOptions();
         ByteArrayOutputStream out = new ByteArrayOutputStream();
         System.setErr(new PrintStream(out));
-        Cut.runs(true, true,options.getInputName(), options.getOutputName(), options.getRange());
+        Cut cut = new Cut();
+        cut.runs(true, true,options.getInputName(), options.getOutputName(), options.getRange());
         String output = out.toString().trim();
         assertEquals("Either -c or -w must be specified, but not both", output);
     }
@@ -22,7 +23,8 @@ public class CutTest {
         PrintWriter writer = new PrintWriter(new FileWriter(inputFile));
         writer.println("Hello, world!");
         writer.close();
-        Cut.runs(true, options.isByWord(),inputFile.getAbsolutePath(), outputFile.getAbsolutePath(), "0-5");
+        Cut cut = new Cut();
+        cut.runs(true, options.isByWord(),inputFile.getAbsolutePath(), outputFile.getAbsolutePath(), "0-5");
         BufferedReader reader = new BufferedReader(new FileReader(outputFile));
         String result = reader.readLine();
         reader.close();
@@ -34,7 +36,8 @@ public class CutTest {
         String[] args = {"-c", "-o", "input/output.txt", "input/input.txt", "1-10"};
         CutOptions options = new CutOptions();
         options.parse(args);
-        Cut.runs(options.isByChar(), options.isByWord(),options.getInputName(), options.getOutputName(), options.getRange());
+        Cut cut = new Cut();
+        cut.runs(options.isByChar(), options.isByWord(),options.getInputName(), options.getOutputName(), options.getRange());
         BufferedReader reader = new BufferedReader(new FileReader(options.getOutputName()));
         String result = reader.readLine();
         assertEquals("his is a t", result);
