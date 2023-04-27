@@ -31,7 +31,42 @@ public class Cut {
         try {
             String line;
             while ((line = reader.readLine()) != null) {
-                String result = processLine(line, range, byChar);
+                String result;
+                try {
+                    String[] parts = range.split("-");
+                    int start, end;
+                    if (parts.length == 1) {
+                        start = 0;
+                        end = Integer.parseInt(parts[0]);
+                    } else if (parts[0].isEmpty()) {
+                        start = 0;
+                        end = Integer.parseInt(parts[1]);
+                    } else {
+                        start = Integer.parseInt(parts[0]);
+                        end = Integer.parseInt(parts[1]);
+                    }
+                    if (end >= line.length()) {
+                        end = line.length() - 1;
+                    }
+                    if (end < start || end < 0) {
+                        result = "";
+                    }
+                    if (start < 0) {
+                        start = 0;
+                    }
+                    if (byChar) {
+                        result = line.substring(start, end + 1);
+                    } else {
+                        String[] words = line.split("\\s+");
+                        StringBuilder str = new StringBuilder();
+                        for (int i = start; i < end; i++) {
+                            str.append(words[i]).append(" ");
+                        }
+                        result = str.toString().trim();
+                    }
+                } catch (NumberFormatException e) {
+                    result = "";
+                }
                 writer.println(result);
             }
         } catch (IOException e) {
@@ -39,46 +74,6 @@ public class Cut {
         } finally {
             reader.close();
             writer.close();
-        }
-    }
-
-    private static String processLine(String line, String range, boolean byChar) {
-        try {
-            String[] parts = range.split("-");
-            int start, end;
-            if (parts.length == 1) {
-                start = 0;
-                end = Integer.parseInt(parts[0]);
-            } else if (parts[0].isEmpty()) {
-                start = 0;
-                end = Integer.parseInt(parts[1]);
-            } else {
-                start = Integer.parseInt(parts[0]);
-                end = Integer.parseInt(parts[1]);
-            }
-            if (end >= line.length()) {
-                end = line.length() - 1;
-            }
-            if (end < start || end < 0) {
-                return "";
-            }
-            if (start < 0) {
-                start = 0;
-            }
-            if (byChar) {
-                return line.substring(start, end + 1);
-            } else {
-                String[] words = line.split("\\s+");
-                String result;
-                StringBuilder str = new StringBuilder();
-                for (int i = start; i < end; i++) {
-                    str.append(words[i]).append(" ");
-                }
-                result = str.toString().trim();
-                return result;
-            }
-        } catch (NumberFormatException e) {
-            return "";
         }
     }
 }
